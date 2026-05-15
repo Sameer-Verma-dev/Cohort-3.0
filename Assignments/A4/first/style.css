@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1.5fr;
+    grid-template-areas: 
+    "top-left center1 center5 top-right"
+    "top-left center1 center5 middle-right"
+    "bottom-left center2 center5 middle-right"
+    "bottom-left center3 bottom-right bottom-right"
+    "bottom-left center4 bottom-right bottom-right";
+    gap: 15px;
+    padding: 20px 50px;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-top: 10px;
+
+
+}
+
+#top-left{
+    background-color: #9b51f1;
+    grid-area: top-left;
+    border-radius: 40px;
+    overflow: hidden;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 30px;
+
+
+}
+.card h2{
+    font-family: Bebas Neue;
+    text-align: left;
+    color: white;
+    font-weight: 300;
+    font-size: 120px;      
+    letter-spacing: -2px;
+    line-height: 1;
+    margin: 0;
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+}
+hr{
+    margin: 10px 30px;
+}
+.card h3{
+    font-size: 20px ;
+    text-align: left;
+    font-family: Bebas Neue;
+    font-weight: 200;
+    color: #9b51f1;
+    letter-spacing: 5px;
+}
+#bitcoin-row{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+}
+#bitcoin-row div{
+    width: 60px;
+    height: 60px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #d5f257;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bitcoin-logo{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+
+}
+#bitcoin-row p{
+    color: white;
+    font-family: Montserrat;
+}
+
+
+
+
+
+#bottom-left{
+    /* background-color: #d5f257; */
+    border: 2px solid #d5f257;
+    grid-area: bottom-left;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#center1{
+    background-color: #171818;
+    grid-area: center1;
+    border-radius: 40px;
+
+}
+#center2{
+    background-color: #171818;
+    grid-area: center2;
+    border-radius: 40px;
+
+}
+#center3{
+    background-color: #171818;
+    grid-area: center3;
+    border-radius: 40px;
+
+}
+#center4{
+    background-color: #d5f257;
+    grid-area: center4;
+    border-radius: 40px;
+
+}
+#center5{
+    background-color: #171818;
+    grid-area: center5;
+    border-radius: 40px;
+
+}
+#top-right{
+    background-color: #9b51f1;
+    grid-area: top-right;
+    border-radius: 40px;
+}
+#middle-right{
+    background-color: #d5f257;
+    grid-area: middle-right;
+    border-radius: 40px;
+}
+#bottom-right{
+    background-color: #fdfdfd;
+    grid-area: bottom-right;
+    border-radius: 40px;
+}
